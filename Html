@@ -1,0 +1,97 @@
+    <!doctype html>
+    <html lang="ru">
+        <head>
+        <link rel="stylesheet" href="style.css" >
+        <meta charset="UTF-8"/>
+        </head>
+        <body>
+        <!-- <div style="margin-bottom: 25;">
+            <img scr="img1.jpg" width="34.6" height="52">
+            <button style="color: black; border: 0; background-color: white;" width="57.54" height="48">Главная</button>
+            <button style="color: black; border: 0; background-color: white;"width="34.6" height="52">Главная</button>
+            <button style="color: black; border: 0; background-color: white;"width="34.6" height="52">Главная</button>
+            <button style="color: black; border: 0; background-color: white;"width="34.6" height="52">Главная</button>
+            <button style="color: rgb(255, 255, 255); border: 0;     background-color: rgb(255, 136, 0); border-radius: 15%;"width="214.6" height="52">Главная</button>
+        </div> -->
+            <div class="Information-card">
+                <h1><b>Реестр заявлений о предоставлении доступа к инфраструктуре</b></h1>
+            </div>
+            <div class="Filter">
+                <div class="Filter__Regions Filter">
+                    <select required name="Regions" id="Regions" placeholder="Населеные пункты РФ" >
+                    <option value="" disabled selected>Населеные пункты РФ</option>
+                    <option value="0"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                    </select>
+                </div>
+                <div  class="Filter__Applicant ">
+                    <form>
+                        <input style="width: 45vh;;"type="text" name="Applicant" placeholder="Наименование и описание объека">
+                    </form>
+                </div>
+                <div class="Filter__Description-object ">
+                    <form>
+                        <input type="text" name="Description-object" placeholder="Наименование заявителя">
+                    </form>
+                </div>
+                <div class="Filter__Post-date  ">
+                    <form><br><br>  
+                        <input placeholder="Дата поступения заявления"  onfocus="(this.type='date')" name="Post-date">
+                    </form>
+                </div>
+                <div class="Filter__start-date  ">
+                    <form>
+                        <input placeholder="Планируемый срок начала использования оъбекта" onfocus="(this.type='date')" name="start-date">
+                </div>
+                <div class="Filter__Application-number ">
+                    <form>
+                        <input  type="text" name="Application-number" placeholder="Номер заявления">
+                    </form>
+                </div>
+                <div class="Filter__Apply ">
+                    <form>
+                        <input style=" color: white; background-color: #ff4800; border: 0cm;" type="submit" value="Применить">
+                    </form>
+                </div>
+                <div class="Filter__Clearing ">
+                    <form>
+                        <input disabled type="submit" value="Очистить фильр">
+                    </form>
+                </div>
+            </div>
+                <div class="Applications">
+                    <table style="size: 8px; border: 1px solid black;">
+                            <b>Заявления</b>
+                    </table>
+                    <table>
+                        <div class="Applications__Regions">
+                        <table style="color: rgb(175, 175, 175); background-color: rgb(243, 243, 243);">
+                            <tr>
+                                <th>Населеные пункты РФ</th>
+                                <th>Номер заявления</th>
+                                <th>Дата и время поступения заявления</th>
+                                <th>Наименование и организационно-правовая форма заявителя</th>
+                                <th>Наименование и описание оъбекта инфраструктуры, к которому запрашивается доступ</th>
+                                <th>Планируемый срок начала использования оЪбекта инфраструктуры</th>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <th>----- РФ</th>
+                                <th>----- заявления</th>
+                                <th>------ и ----- поступения заявления</th>
+                                <th>-------- -------- форма заявителя</th>
+                                <th>------- -------- оъбекта инфраструктуры, к которому запрашивается доступ</th>
+                                <th>-----  использования оъбекта инфраструктуры</th>
+                            </tr>
+                        <table>
+                        </div>
+                    </table>
+                    
+                </div>
+        </body>
+    </html>
