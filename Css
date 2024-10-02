@@ -1,0 +1,153 @@
+/*Удаление полей по умолчанию*/
+body, h1,h2,h3,h4,p,figure,blockquote, dl,dd, input{
+    margin-block-end: 0;
+    font-family: sans-serif;
+    width: 200 px;
+}
+/*Основные пареметры body*/
+/*body {}*/
+/*Предотвращение увеличивания текста*/
+html{
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+/*Удаляет стили у ul и ol*/
+ul[role='list'], ol[role='list']{
+    list-style: none;
+}
+/*Информационная карточка под шапкой*/
+.Information-card{
+    background-color: rgb(225, 225, 225);
+    padding: 10mm;
+    position: 0cm;
+    width: 100%;
+    
+}
+.item{
+    align-self: flex-end;  ;
+}
+/*Объщий блок для фильтров*/
+.Filter {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 0cm;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+/*Выпадающий, список регионов*/
+.Filter__Regions{
+    padding: 2px 5px;
+    order: 1;
+    width: 200px;
+}
+/*Настройка для выбора*/
+select{
+    border-radius: 10%; 
+    size: 32px;
+    width: 400px;
+    height: 3.5vh;
+    background-color: rgb(243, 243, 243);
+    border: 0cm;
+}
+select:required:invalid{
+    color: rgb(0, 0, 0);
+}
+option[value=""][disabled]{
+    display: none;
+}
+
+/*календарь, поступления заявки*/
+.Filter__Post-date{
+    font-size: 32px;
+    padding: 2px 5px;
+    border-radius: 15%;
+    border: 0cm;
+    flex-wrap: wrap;
+    order: 4;
+    display:flex;
+}
+/*Строка, именоваяия оъбекта*/
+.Filter__Applicant{
+    font-size: 32px;
+    padding: 2px 5px;
+    border-radius: 15%;
+    order: 2;
+    width: 700%;
+    flex-basis: 200px;
+}
+/*Строка, заявителя*/
+.Filter__Description-object{
+    font-size: 32px;
+    padding: 2px 5px;
+    border-radius: 15%;
+    flex-basis: 200px;
+    order: 3;
+}
+input[type=text]{    
+    height: 4vh;
+    background-color: rgb(243, 243, 243);
+    border: 0cm;
+    border-radius: 10%; 
+}
+input[type=date]{
+    height: 4vh;
+    background-color: rgb(243, 243, 243);
+    border: 0cm;
+    border-radius: 10%;   
+}
+input[type=submit]{
+    height: 3.5vh;
+    background-color: rgb(243, 243, 243);
+    border: 0cm;
+}
+input[onfocus="(this.type='date')"]{
+    height: 4vh;
+    background-color: rgb(243, 243, 243);
+    border: 0cm;
+    border-radius: 10%;  
+}
+/*Календарь, начала использования оъбекта пареметры*/
+.Filter__start-date{
+    font-size: 32px;
+    padding: 2px 5px;
+    border-radius: 15%;
+    order: 4;
+    flex-wrap: wrap;
+}
+/*Строка, номер заявителя*/
+.Filter__Application-number{
+    font-size: 32px;
+    padding: 2px 5px;
+    border-radius: 15%;
+    order: 6;
+    flex-wrap: wrap;
+}
+/*Кнопка, отправить данные*/
+.Filter__Apply{
+    font-size: 32px;
+    padding: 2px 5px;
+    border-radius: 15%;
+    order: 7;
+    flex-wrap: wrap;
+}
+/*Кнопка, очистить данные*/
+.Filter__Clearing{
+    font-size: 32px;
+    padding: 2px 5px;
+    border-radius: 15%;
+    order: 8;
+    flex-wrap: wrap;
+}
+
+.Applications{
+    color: #000;
+}
+
+.Applications__Regions{
+    color: #000;
+}
