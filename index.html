@@ -16,8 +16,7 @@
             <div class="Information-card">
                 <h1><b>Реестр заявлений о предоставлении доступа к инфраструктуре</b></h1>
             </div>
-            <div class="Filter">
-                <form>
+                <form class="Filter">
                     <div class="Filter__Regions Filter">
                         <select required name="Regions" id="Regions" placeholder="Населеные пункты РФ" >
                         <option value="" disabled selected>Населеные пункты РФ</option>
@@ -42,55 +41,50 @@
                             <input placeholder="Планируемый срок начала использования оъбекта" onfocus="(this.type='date')" name="start-date">
                     </div>
                     <div class="Filter__Application-number Filter">
-                            <input  type="text" name="Application-number" onfocus="(this.type='text')" placeholder="Номер заявления">
+                            <input type="text" name="Application-number" onfocus="(this.type='text')" placeholder="Номер заявления">
                     </div>
-                    <div class="Filter__Apply Filter Filter__input">
-                            <input type="submit"name="Apply" value="Применить">
+                    <div class="Filter__Apply Filter__input Filter ">
+                            <input type="submit" name="Apply" value="Применить">
                     </div>
                     <div class="Filter__Clearing Filter">
                             <input disabled type="submit" value="Очистить фильр">
                     </div>
                 </form>
-            </div>
                 <div class="Applications">
                     <H2>Заявления</H2>
                     <table>
-                        <div class="Applications__Regions">
-                        <table>
-                            <tr>
-                                <th>Населеные пункты РФ</th>
-                                <th>Номер заявления</th>
-                                <th>Дата и время поступения заявления</th>
-                                <th>Наименование и организационно-правовая форма заявителя</th>
-                                <th>Наименование и описание оъбекта инфраструктуры, к которому запрашивается доступ</th>
-                                <th>Планируемый срок начала использования оЪбекта инфраструктуры</th>
-                            </tr>
-                            <tr>
-                                <td>Калининградская область	</td>
-                                <td>24-26148</td>
-                                <td>02.10.2024 18:12</td>
-                                <td>ПАОВымпелКом»</td>
-                                <td>ЛКСС г. Черняховск, ул. Калинина (КК № 7004) - ул. Горная, д.1</td>
-                                <td>15.12.2024</td>
-                            </tr>
-                            <tr>
-                                <td>Мурманская область</td>
-                                <td>24-26143</td>
-                                <td>02.10.2024 17:31</td>
-                                <td>ПАО "ВымпелКом"</td>
-                                <td>ЛКСС г. Мончегорск, пр-кт Металлургов, д. 58 - наб. Ленинградская, д. 34 корп. 1</td>
-                                <td>10.02.2025</td>
-                            </tr>
-                            <tr>
-                                <td>Мурманская область</td>
-                                <td>24-26130</td>
-                                <td>02.10.2024 16:49</td>
-                                <td>ПАО "ВымпелКом"</td>
-                                <td>ЛКСС г. Мончегорск, ул. Железнодорожная, д. 1 - ул. Комсомольская, д. 13а/td>
-                                <td>10.02.2025</td>
-                            </tr>
-                        <table>
-                        </div>
+                        <tr>
+                            <th>Населеные пункты РФ</th>
+                            <th>Номер заявления</th>
+                            <th>Дата и время поступения заявления</th>
+                            <th>Наименование и организационно-правовая форма заявителя</th>
+                            <th>Наименование и описание оъбекта инфраструктуры, к которому запрашивается доступ</th>
+                            <th>Планируемый срок начала использования оЪбекта инфраструктуры</th>
+                        </tr>
+                        <tr>
+                            <td>Калининградская область	</td>
+                            <td>24-26148</td>
+                            <td>02.10.2024 18:12</td>
+                            <td>ПАОВымпелКом»</td>
+                            <td>ЛКСС г. Черняховск, ул. Калинина (КК № 7004) - ул. Горная, д.1</td>
+                            <td>15.12.2024</td>
+                        </tr>
+                        <tr>
+                            <td>Мурманская область</td>
+                            <td>24-26143</td>
+                            <td>02.10.2024 17:31</td>
+                            <td>ПАО "ВымпелКом"</td>
+                            <td>ЛКСС г. Мончегорск, пр-кт Металлургов, д. 58 - наб. Ленинградская, д. 34 корп. 1</td>
+                            <td>10.02.2025</td>
+                        </tr>
+                        <tr>
+                            <td>Мурманская область</td>
+                            <td>24-26130</td>
+                            <td>02.10.2024 16:49</td>
+                            <td>ПАО "ВымпелКом"</td>
+                            <td>ЛКСС г. Мончегорск, ул. Железнодорожная, д. 1 - ул. Комсомольская, д. 13а/td>
+                            <td>10.02.2025</td>
+                        </tr>
                     </table>
                     
                 </div>
