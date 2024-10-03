@@ -20,8 +20,9 @@ body, h1,h2,h3,h4,p,figure,blockquote, dl,dd, input{
     flex-wrap: wrap;
     border: 0cm;
     padding: 1.4em 6em;
-    overflow: hidden
-    flex-direction: row
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 /*Выпадающий, список регионов*/
@@ -150,6 +151,9 @@ input[onfocus="(this.type='date')"]{
 table{
     border: 1px color(rgb122, 122, 122);
 }
+th td{
+    font-family: Times New Roman, Times, serif;
+}
 th {
     color: rgb(175, 175, 175); 
     background-color: rgb(243, 243, 243);
@@ -158,4 +162,8 @@ th {
 td{
     color: rgb(0, 0, 0); 
     background-color: rgb(255, 255, 255);
+
+}
+tr:hover{
+    background-color: rgb(216, 215, 215);
 }
