@@ -1,7 +1,7 @@
     <!doctype html>
     <html lang="ru">
         <head>
-        <link rel="stylesheet" href="style.css" >
+        <link rel="stylesheet" href="./index.css" >
         <meta charset="UTF-8"/>
         </head>
         <body>
@@ -17,59 +17,46 @@
                 <h1><b>Реестр заявлений о предоставлении доступа к инфраструктуре</b></h1>
             </div>
             <div class="Filter">
-                <div class="Filter__Regions Filter">
-                    <select required name="Regions" id="Regions" placeholder="Населеные пункты РФ" >
-                    <option value="" disabled selected>Населеные пункты РФ</option>
-                    <option value="0"></option>
-                    <option value="1"></option>
-                    <option value="2"></option>
-                    <option value="3"></option>
-                    <option value="4"></option>
-                    <option value="5"></option>
-                    </select>
-                </div>
-                <div  class="Filter__Applicant Filter">
-                    <form>
-                        <input style="width: 45vh;;"type="text" name="Applicant" placeholder="Наименование и описание объека">
-                    </form>
-                </div>
-                <div class="Filter__Description-object ">
-                    <form>
-                        <input type="text" name="Description-object" placeholder="Наименование заявителя">
-                    </form>
-                </div>
-                <div class="Filter__Post-date  Filter">
-                    <form>  
-                        <input placeholder="Дата поступения заявления    "  onfocus="(this.type='date')" name="Post-date">
-                    </form>
-                </div>
-                <div class="Filter__start-date  Filter">
-                    <form>
-                        <input placeholder="Планируемый срок начала использования оъбекта    " onfocus="(this.type='date')" name="start-date">
-                </div>
-                <div class="Filter__Application-number Filter">
-                    <form>
-                        <input  type="text" name="Application-number" placeholder="Номер заявления">
-                    </form>
-                </div>
-                <div class="Filter__Apply Filter">
-                    <form>
-                        <input style=" color: white; background-color: #ff4800; border: 0cm;" type="submit" value="Применить">
-                    </form>
-                </div>
-                <div class="Filter__Clearing Filter">
-                    <form>
-                        <input disabled type="submit" value="Очистить фильр">
-                    </form>
-                </div>
+                <form>
+                    <div class="Filter__Regions Filter">
+                        <select required name="Regions" id="Regions" placeholder="Населеные пункты РФ" >
+                        <option value="" disabled selected>Населеные пункты РФ</option>
+                        <option value="0"></option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        </select>
+                    </div>
+                    <div  class="Filter__Applicant Filter">
+                            <input style="width: 45vh;"type="text" name="Applicant" placeholder="Наименование и описание объека">
+                    </div>
+                    <div class="Filter__Description-object Filter">
+                            <input type="text" name="Description-object" placeholder="Наименование заявителя">
+                    </div>
+                    <div class="Filter__Post-date  Filter">
+                            <input placeholder="Дата поступения заявления"  onfocus="(this.type='date')" name="Post-date">
+                    </div>
+                    <div class="Filter__start-date  Filter">
+                            <input placeholder="Планируемый срок начала использования оъбекта" onfocus="(this.type='date')" name="start-date">
+                    </div>
+                    <div class="Filter__Application-number Filter">
+                            <input  type="text" name="Application-number" onfocus="(this.type='text')" placeholder="Номер заявления">
+                    </div>
+                    <div class="Filter__Apply Filter Filter__input">
+                            <input type="submit"name="Apply" value="Применить">
+                    </div>
+                    <div class="Filter__Clearing Filter">
+                            <input disabled type="submit" value="Очистить фильр">
+                    </div>
+                </form>
             </div>
                 <div class="Applications">
-                    <table style="size: 8px; border: 1px solid black;">
-                            <b>Заявления</b>
-                    </table>
+                    <H2>Заявления</H2>
                     <table>
                         <div class="Applications__Regions">
-                        <table style="color: rgb(175, 175, 175); background-color: rgb(243, 243, 243);">
+                        <table>
                             <tr>
                                 <th>Населеные пункты РФ</th>
                                 <th>Номер заявления</th>
@@ -78,15 +65,29 @@
                                 <th>Наименование и описание оъбекта инфраструктуры, к которому запрашивается доступ</th>
                                 <th>Планируемый срок начала использования оЪбекта инфраструктуры</th>
                             </tr>
-                        </table>
-                        <table>
                             <tr>
-                                <th>----- РФ</th>
-                                <th>----- заявления</th>
-                                <th>------ и ----- поступения заявления</th>
-                                <th>-------- -------- форма заявителя</th>
-                                <th>------- -------- оъбекта инфраструктуры, к которому запрашивается доступ</th>
-                                <th>-----  использования оъбекта инфраструктуры</th>
+                                <td>Калининградская область	</td>
+                                <td>24-26148</td>
+                                <td>02.10.2024 18:12</td>
+                                <td>ПАОВымпелКом»</td>
+                                <td>ЛКСС г. Черняховск, ул. Калинина (КК № 7004) - ул. Горная, д.1</td>
+                                <td>15.12.2024</td>
+                            </tr>
+                            <tr>
+                                <td>Мурманская область</td>
+                                <td>24-26143</td>
+                                <td>02.10.2024 17:31</td>
+                                <td>ПАО "ВымпелКом"</td>
+                                <td>ЛКСС г. Мончегорск, пр-кт Металлургов, д. 58 - наб. Ленинградская, д. 34 корп. 1</td>
+                                <td>10.02.2025</td>
+                            </tr>
+                            <tr>
+                                <td>Мурманская область</td>
+                                <td>24-26130</td>
+                                <td>02.10.2024 16:49</td>
+                                <td>ПАО "ВымпелКом"</td>
+                                <td>ЛКСС г. Мончегорск, ул. Железнодорожная, д. 1 - ул. Комсомольская, д. 13а/td>
+                                <td>10.02.2025</td>
                             </tr>
                         <table>
                         </div>
