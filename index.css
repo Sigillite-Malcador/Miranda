@@ -32,7 +32,11 @@ body, h1,h2,h3,h4,p,figure,blockquote, dl,dd, input{
     overflow: hidden
     
 }
-
+.Filter__input{
+    color: white; 
+    background-color: #ff4800; 
+    border: 0cm;
+}
 /*Выпадающий, список регионов*/
 .Filter__Regions{
     padding: 2px 5px;
