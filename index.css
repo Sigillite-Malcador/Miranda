@@ -1,21 +1,10 @@
 /*Удаление полей по умолчанию*/
 body, h1,h2,h3,h4,p,figure,blockquote, dl,dd, input{
-    margin-block-end: 0;
     font-family: sans-serif;
-    width: 200 px;
+    
+    
 }
-/*Основные пареметры body*/
-/*body {}*/
-/*Предотвращение увеличивания текста*/
-html{
-    -moz-text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
-}
-/*Удаляет стили у ul и ol*/
-ul[role='list'], ol[role='list']{
-    list-style: none;
-}
+
 /*Информационная карточка под шапкой*/
 .Information-card{
     background-color: rgb(225, 225, 225);
@@ -25,7 +14,8 @@ ul[role='list'], ol[role='list']{
     
 }
 .item{
-    align-self: flex-end;  ;
+    align-self: flex-end; 
+    flex: auto;
 }
 /*Объщий блок для фильтров*/
 .Filter {
@@ -35,24 +25,29 @@ ul[role='list'], ol[role='list']{
     display: flex;
     flex-wrap: wrap;
     border: 0cm;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-content: stretch;
     align-items: baseline;
+    padding: 1.4em 6em;
+    overflow: hidden
+    
 }
 
 /*Выпадающий, список регионов*/
 .Filter__Regions{
     padding: 2px 5px;
     order: 1;
-    width: 200px;
+    flex-basis: 33%;
 }
 /*Настройка для выбора*/
 select{
     border-radius: 10%; 
     size: 32px;
-    width: 400px;
-    height: 3.5vh;
+    width: 39em; 
+    height: 3em;
     background-color: rgb(243, 243, 243);
     border: 0cm;
+    font-size: 14px;
 }
 select:required:invalid{
     color: rgb(0, 0, 0);
@@ -67,9 +62,7 @@ option[value=""][disabled]{
     padding: 2px 5px;
     border-radius: 15%;
     border: 0cm;
-    flex-wrap: wrap;
     order: 4;
-    display:flex;
 }
 /*Строка, именоваяия оъбекта*/
 .Filter__Applicant{
@@ -77,8 +70,8 @@ option[value=""][disabled]{
     padding: 2px 5px;
     border-radius: 15%;
     order: 2;
-    width: 700%;
-    flex-basis: 200px;
+    flex-basis: 10em;
+    width: 40em;
 }
 /*Строка, заявителя*/
 .Filter__Description-object{
@@ -87,29 +80,36 @@ option[value=""][disabled]{
     border-radius: 15%;
     flex-basis: 200px;
     order: 3;
+    flex-basis: 20%;
+    width: 40em;
 }
 input[type=text]{    
-    height: 4vh;
+    height: 3em;
     background-color: rgb(243, 243, 243);
     border: 0cm;
     border-radius: 10%; 
+    width: 30em; 
 }
 input[type=date]{
-    height: 4vh;
+    height: 3em;
     background-color: rgb(243, 243, 243);
     border: 0cm;
-    border-radius: 10%;   
+    border-radius: 10%;
+    width: 20em;  
 }
 input[type=submit]{
-    height: 3.5vh;
+    height: 3em;
     background-color: rgb(243, 243, 243);
     border: 0cm;
+    border-radius: 10%;
+    width: 15em; 
 }
 input[onfocus="(this.type='date')"]{
-    height: 4vh;
+    height: 3em;
     background-color: rgb(243, 243, 243);
     border: 0cm;
     border-radius: 10%;  
+    width: 20em; 
 }
 /*Календарь, начала использования оъбекта пареметры*/
 .Filter__start-date{
@@ -145,7 +145,7 @@ input[onfocus="(this.type='date')"]{
 }
 
 .Applications{
-    color: #000;
+    padding: 30px 90px;;
 }
 
 .Applications__Regions{
