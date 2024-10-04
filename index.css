@@ -1,20 +1,21 @@
 /*Удаление полей по умолчанию*/
 body, h1,h2,h3,h4,p,figure,blockquote, dl,dd, input{
     font-family: sans-serif;
+    height: 100%;
 }
 
 /*Информационная карточка под шапкой*/
 .Information-card{
     background-color: rgb(225, 225, 225);
-    padding: 10mm;
-    position: 0cm;
+    padding: 1%;
+    position: 0%;
     width: 100%;
     
 }
 /*Объщий блок для фильтров*/
 .Filter {
-    margin: 5px;
-    padding: 10px 20px;
+    margin: 0.5%;
+    padding: 0.2% 0.4%;
     font-size: 16px;
     display: flex;
     flex-wrap: wrap;
@@ -34,12 +35,12 @@ body, h1,h2,h3,h4,p,figure,blockquote, dl,dd, input{
 /*Настройка для выбора*/
 select{
     border-radius: 10%; 
-    size: 32px;
+    size: 2em;
     width: 39em; 
     height: 3em;
     background-color: rgb(243, 243, 243);
     border: 0cm;
-    font-size: 14px;
+    font-size: 1em;
 }
 select:required:invalid{
     color: rgb(0, 0, 0);
@@ -62,8 +63,7 @@ option[value=""][disabled]{
     padding: 2px 5px;
     border-radius: 15%;
     order: 2;
-    flex-basis: 10em;
-    width: 40em;
+    width: 10em;
 }
 /*Строка, заявителя*/
 .Filter__Description-object{
@@ -164,6 +164,29 @@ td{
     background-color: rgb(255, 255, 255);
 
 }
-tr:hover{
-    background-color: rgb(216, 215, 215);
+tr:hover td{
+    background-color: rgb(175, 175, 175);
+}
+
+
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    .Filter{ flex-direction:column;}
 }
