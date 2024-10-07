@@ -2,12 +2,13 @@
 body, h1,h2,h3,h4,p,figure,blockquote, dl,dd, input{
     font-family: sans-serif;
     height: 100%;
+    margin:0%;
 }
 
 /*Информационная карточка под шапкой*/
 .Information-card{
     background-color: rgb(225, 225, 225);
-    padding: 1%;
+    padding: 2%;
     position: 0%;
     width: 100%;
     
@@ -28,7 +29,7 @@ body, h1,h2,h3,h4,p,figure,blockquote, dl,dd, input{
 
 /*Выпадающий, список регионов*/
 .Filter__Regions{
-    padding: 2px 5px;
+    padding: 0.2% 0.4%;;
     order: 1;
     flex-basis: 33%;
 }
@@ -36,7 +37,7 @@ body, h1,h2,h3,h4,p,figure,blockquote, dl,dd, input{
 select{
     border-radius: 10%; 
     size: 2em;
-    width: 39em; 
+    width: 100%; 
     height: 3em;
     background-color: rgb(243, 243, 243);
     border: 0cm;
@@ -52,7 +53,7 @@ option[value=""][disabled]{
 /*календарь, поступления заявки*/
 .Filter__Post-date{
     font-size: 32px;
-    padding: 2px 5px;
+    padding: 0.2% 0.4%;
     border-radius: 15%;
     border: 0cm;
     order: 4;
@@ -60,20 +61,17 @@ option[value=""][disabled]{
 /*Строка, именоваяия оъбекта*/
 .Filter__Applicant{
     font-size: 32px;
-    padding: 2px 5px;
+    padding: 0.2% 0.4%;
     border-radius: 15%;
     order: 2;
-    width: 10em;
 }
 /*Строка, заявителя*/
 .Filter__Description-object{
-    font-size: 32px;
-    padding: 2px 5px;
+    font-size: 3em;
+    padding: 0.2% 0.4%;
     border-radius: 15%;
-    flex-basis: 200px;
     order: 3;
-    flex-basis: 20%;
-    width: 40em;
+    flex-basis: 31%;
 }
 input[onfocus="(this.type='text')"]{
     color: rgb(0, 0, 0); 
@@ -85,28 +83,28 @@ input[type=text]{
     background-color: rgb(243, 243, 243);
     border: 0cm;
     border-radius: 10%; 
-    width: 30em; 
+    width: 150%; 
 }
 input[type=date]{
     height: 3em;
     background-color: rgb(243, 243, 243);
     border: 0cm;
     border-radius: 10%;
-    width: 20em;  
+    width: 100%;
 }
 input[type=submit]{
     height: 3em;
     background-color: rgb(243, 243, 243);
     border: 0cm;
     border-radius: 10%;
-    width: 15em; 
+    width: 100%;
 }
 input[onfocus="(this.type='date')"]{
     height: 3em;
     background-color: rgb(243, 243, 243);
     border: 0cm;
     border-radius: 10%;  
-    width: 20em; 
+    width: 150%; 
 }
 /*Календарь, начала использования оъбекта пареметры*/
 .Filter__start-date{
@@ -189,4 +187,8 @@ tr:hover td{
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
     .Filter{ flex-direction:column;}
+    .input[type=text]{width: 90%;}
+    .input[type=date]{width: 90vh;}
+    .input[type=submit]{width: 90%;}
+    .input[onfocus="(this.type='date')"]{width: 90%;}
 }
